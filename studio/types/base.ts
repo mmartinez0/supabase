@@ -23,7 +23,6 @@ export interface Project extends ProjectBase {
   // available after projects.fetchDetail
   connectionString?: string
   kpsVersion?: string
-  internalApiKey?: string
   restUrl?: string
   // store subscription tier products.metadata.supabase_prod_id
   subscription_tier?: string
@@ -55,6 +54,8 @@ export interface Member {
     primary_email: string
     username: string
   }
+  invited_id?: number
+  invited_at?: string
 }
 
 export interface ResponseError {
